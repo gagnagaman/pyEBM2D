@@ -17,8 +17,8 @@ The primary purpose of this repository is to explore the speed, value, and feasi
 
 3. **JAX Python (`ebm_python_jax.py`)**
    - **Method:** A JAX-accelerated version using `jax.lax.scan` to compile the entire 40-year time loop into machine code via XLA.
-   - **Differences & Performance:** JAX currently lacks a native sparse LU direct solver, so this implementation relies on a dense matrix LU factorization. This gives it a larger memory footprint ($O(N^3)$) and a noticeable upfront Just-In-Time (JIT) compilation overhead. 
-   - **Best For:** Machine Learning integration. Because the loop is fully compiled in JAX, it supports Automatic Differentiation (AutoDiff). This allows researchers to compute exact gradients of the simulation for parameter tuning (e.g., automatically tuning diffusion coefficients to historical climate data).
+   - **Differences & Performance:** JAX currently lacks a native sparse LU direct solver, so this implementation relies on a dense matrix LU factorization. This gives it a larger memory footprint ($O(N^3)$) and a noticeable upfront Just-In-Time (JIT) compilation overhead. This tends to be slower, although that depends on hardware and the length of the intergration
+   - **Best For:** Testing. There is a GPU/CPU switch in the routine that can be used to test hardware. 
 
 ## Running the Models
 
