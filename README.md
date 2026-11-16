@@ -3,6 +3,7 @@
 This repository contains Python translations of the 2D seasonal Energy Balance Model (EBM) originally written in Fortran by Zhuang, North, and Stevens (2017). 
 
 The primary purpose of this repository is to explore the speed, value, and feasibility of translating legacy Fortran climate models into the modern Python ecosystem.
+That work was inspired by Gavin Schmidts post on RealClimate: https://www.realclimate.org/index.php/archives/2026/11/ai-and-climate-modeling-update/
 
 ## Implementations Included
 
