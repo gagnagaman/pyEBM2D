@@ -1,4 +1,4 @@
-# pyEBM2D: Python Translations of the 2D Energy Balance Model
+# pyEBM2D: Python Translations of the 2D Energy Balance Model developed by North and coworkers.
 
 This repository contains Python translations of the 2D seasonal Energy Balance Model (EBM) originally written in Fortran by Zhuang, North, and Stevens (2017). 
 
